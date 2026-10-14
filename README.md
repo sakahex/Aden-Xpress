@@ -7,6 +7,7 @@ walks to the right farm spot and moves on when it levels up. No scripting — ev
 
 💬 **[Join our Discord](https://discord.gg/PUMUGWgAkY)** for help, news and zone packs.
 📖 **[Step-by-step manual](MANUAL.md)** — from install to a character that levels by itself.
+🗺️ **[Geodata](Geodata)** — download for **Auto route** on the route map.
 
 ![Gludio Gate](screenshots/main.png)
 
