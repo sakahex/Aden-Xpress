@@ -91,6 +91,21 @@ New to it? Follow the **[step-by-step manual](MANUAL.md)**.
 
 ---
 
+## 🗺️ Auto route (geodata)
+
+Don't want to walk and record every route? The route map's **Auto route** button finds a walkable way
+between your points by itself — around walls, over bridges, up stairs. For that it needs the game's
+**geodata** (the map of where you can walk):
+
+1. Download **[Geodata_HighFive_L2J.zip](../../releases/download/geodata-hi5/Geodata_HighFive_L2J.zip)** (about 220 MB) and unzip it anywhere, e.g. `Desktop\Geodata`.
+2. Gludio Gate → **Settings → App → Geodata folder** → pick that folder.
+3. Open a route's **Map** → **Auto route**. Check it on the map and fix points by hand if you like.
+
+Only the editor uses these files — Adrenaline doesn't need them. You do this once — updates keep your geodata folder.
+*The geodata is the public [L2J_Geodata_Hi5](https://github.com/Zyno/L2J_Geodata_Hi5) project (GNU GPL v3).*
+
+---
+
 ## 🔄 Updates
 
 The editor checks for a new version when it starts — click **Yes** and it updates itself and the scripts.
