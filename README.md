@@ -1,5 +1,8 @@
 # Gludio Gate
 
+[![Latest version](https://img.shields.io/github/v/release/sakahex/Gludio-Gate?label=latest%20version&color=2ea44f&style=for-the-badge)](https://github.com/sakahex/Gludio-Gate/releases/latest)
+[![Download](https://img.shields.io/badge/download-GludioGateSetup.exe-0969da?style=for-the-badge&logo=windows)](https://github.com/sakahex/Gludio-Gate/releases/latest/download/GludioGateSetup.exe)
+
 **Build your own automatic leveling for the Adrenaline bot (Lineage 2 High Five) — for any levels you want.**
 
 Set up your zones once and your character levels by itself: it teleports, buys gear and supplies, does quests,
@@ -65,7 +68,7 @@ walks to the right farm spot and moves on when it levels up. No scripting — ev
 
 ## 📥 Install
 
-1. **[Releases](../../releases)** → newest version → download **`GludioGateSetup.exe`**.
+1. Download **[GludioGateSetup.exe](https://github.com/sakahex/Gludio-Gate/releases/latest/download/GludioGateSetup.exe)** — always the latest version.
 2. Run it and select your **Adrenaline folder** (the one that contains `Scripts`).
 3. Start **Gludio Gate** from the desktop shortcut.
 
