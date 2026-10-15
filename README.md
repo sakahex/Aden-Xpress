@@ -89,7 +89,7 @@ One key works on one PC; a new PC or a Windows reinstall needs a new key.
 
 1. Log in your character and set up fighting in Adrenaline as usual.
 2. In Adrenaline run **`Scripts\Leveling\Gludio Gate\Leveling_1_40.txt`**.
-3. Open Gludio Gate to build and change your zones — everything saves by itself.
+3. Open Gludio Gate to build and change your zones, then press **💾 Save** — the characters running that script use the changes right away.
 
 New to it? Follow the **[step-by-step manual](MANUAL.md)**.
 
