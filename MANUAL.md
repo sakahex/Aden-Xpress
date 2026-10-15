@@ -59,7 +59,7 @@ After activation the scripts appear next to the program:
 |---|---|
 | `Leveling_1_40.txt` | **the leveling script — the one you run in Adrenaline** |
 | `Editor.txt` | connects the editor to the game *without* leveling (for recording routes) |
-| `Leveling_1_40.ini` | your zones, shops, routes and settings (saved automatically, never overwritten by updates) |
+| `Leveling_1_40.ini` | your zones, shops, routes and settings (saved when you press **Save**, never overwritten by updates) |
 | `EditorLink.txt`, `SettingsModule.txt`, `PathRecorder.txt` | helpers the scripts need — leave them there |
 
 ---
@@ -84,7 +84,6 @@ Several characters can run at once — each gets its own button in the **Charact
 
 | | |
 |---|---|
-| 📄 **Leveling_1_40 ▾** | the script you're editing: make a new one, open another (also from any folder), rename, delete |
 | **Recorder** | advanced route recorder |
 | **Game database** | look up items, NPCs, skills and game messages with their ids |
 | **Check for updates** | download the newest version |
@@ -95,7 +94,10 @@ Several characters can run at once — each gets its own button in the **Charact
 
 **Left side**
 
-- **Zone set** — a separate list of zones for some characters (e.g. one for mages). Most people only use *Main*.
+- **Script** — the script you're editing: pick another one in the box. The **…** next to it: new script, save as a copy, open from another folder, rename, delete.
+  Under it: which characters run this script right now, and **💾 Save** / **Undo changes**.
+  Your changes reach the running characters only when you press **Save** — to try something on one character, use *… → Save as a new script* and run that copy on it.
+- **Character buttons** (2+ characters online) — show the script each one runs; click one to edit its script.
 - **Zones** — all your zones, sorted by level. Click one to edit it.
 - **▲ Up / ▼ Down** — order of zones that start at the same level.
 - **+ Add zone / Delete zone**
@@ -106,7 +108,7 @@ Several characters can run at once — each gets its own button in the **Charact
 
 **Right side** — the selected zone: its name, levels and **the trip**.
 
-Everything saves by itself (top right shows *✓ saved*). Hover any **(?)** for help, click **More ▾** on a card for rarely used options.
+Press **💾 Save** (or Ctrl+S) under the script name when you're done - only then the characters that run the script use your changes. *● not saved* shows there is something to save; **Undo changes** goes back to the last save. Hover any **(?)** for help, click **More ▾** on a card for rarely used options.
 
 ---
 
@@ -263,8 +265,8 @@ Class changes are done **by hand**.
 
 ## 13. More tools
 
-- **Several scripts** — 📄 menu → *New script* / *Save as a new script*: e.g. `Mage_1_40.txt` + `.ini`. Load the `.txt` you want in Adrenaline for each character. Copies update automatically with new versions.
-- **Zone sets** — the **…** next to *Zone set*: a separate zone list inside one script, chosen per character.
+- **Several scripts** — the **…** next to the script name → *New script* / *Save as a new script*: e.g. `Mage_1_40.txt` + `.ini`. Load the `.txt` you want in Adrenaline for each character. Copies update automatically with new versions.
+- **Zone sets** (older scripts only) — shown only when a script still has some. *… → Make this set a separate script* turns one into its own script.
 - **Zone packs** — share zones (with routes) as a file: *Zone packs → Export / Import*.
 - **Zone stats** — compare exp/hour and deaths of your farm spots.
 - **Game database** — find any item / NPC / skill id.
