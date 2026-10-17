@@ -12,7 +12,7 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 📖 **[Step-by-step manual](MANUAL.md)** — from install to a character that levels by itself.
 🗺️ **[Geodata](Geodata)** — download for **Auto route** on the route map.
 
-![Gludio Gate - Lineage 2 auto leveling editor for the Adrenaline bot](screenshots/main.png)
+![Gludio Gate - Lineage 2 auto leveling editor for the Adrenaline bot](screenshots/v3-main.png)
 
 > Adrenaline does the **fighting** (skills, buffs, potions, pick up).
 > Gludio Gate decides **where to go and what to buy** — and moves on by itself.
@@ -41,31 +41,31 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 
 **1. Build the trip for each level range** — in the order the character should do it:
 
-![A zone's trip: teleport, shops and farm spot](screenshots/main.png)
+![A zone's trip: teleport, shops and farm spot](screenshots/v3-main.png)
 
 **2. Add quests right into the trip** — each character's progress is saved, a restart goes on where it stopped:
 
-![Quest steps: talk to an NPC, hunt quest items](screenshots/quest.png)
+![Quest steps: talk to an NPC, hunt quest items](screenshots/v3-quest.png)
 
 **3. Record, draw or auto-route the paths on the real game map:**
 
-![Route map with a walking route in Ant Nest](screenshots/map.png)
+![Route map with a walking route in Ant Nest](screenshots/v3-map.png)
 
 **4. Shopping lists from what the merchant really sells:**
 
-<img src="screenshots/picker.png" width="640" alt="Pick items from what the merchant sells">
+<img src="screenshots/v3-picker.png" width="640" alt="Pick items from what the merchant sells">
 
 **5. One Supplies shop for every level** — the character restocks by itself when it runs low:
 
-![Supplies: potions, soulshots and scrolls per level](screenshots/supplies.png)
+![Supplies: potions, soulshots and scrolls per level](screenshots/v3-supplies.png)
 
 **6. Run** `Leveling_1_40.txt` in Adrenaline — the top bar shows what the character is doing, with live stats.
 
-<img src="screenshots/settings.png" width="640" alt="Gludio Gate settings">
+<img src="screenshots/v3-settings.png" width="640" alt="Gludio Gate settings">
 
 *Settings — sensible defaults, change them only if you want to.*
 
-<img src="screenshots/database.png" width="640" alt="Lineage 2 game database: items, NPCs, skills with ids">
+<img src="screenshots/v3-database.png" width="640" alt="Lineage 2 game database: items, NPCs, skills with ids">
 
 *Game database — every item, NPC and skill with its id.*
 
