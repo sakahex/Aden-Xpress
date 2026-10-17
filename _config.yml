@@ -1,0 +1,6 @@
+title: Gludio Gate - Auto Leveling Script Maker for the Adrenaline Bot (Lineage 2 High Five)
+description: Build automatic leveling for the Adrenaline bot in Lineage 2 High Five - zones, shops, quests, buffs, supplies and routes, with no scripting.
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
