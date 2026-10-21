@@ -25,8 +25,8 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 - 🗺️ **Zones for any levels** — up to 100 zones; several steps per level range (e.g. *shop in Giran → farm at Ant Nest*).
 - 🧭 **One trip list per zone** — teleport → shops, gatekeepers, buffers and quests in **your** order → farm spot. Move anything with ↑ ↓, remove with ✕.
 - 📜 **Quests** — talk steps (accept, deliver, turn in) and hunt steps (collect quest items at the farm spot). *Add this quest* even makes the walking routes between the quest NPCs. Each character keeps its own progress and **goes on where it stopped** after a restart.
-- 🛒 **Shops** — pick items straight from **what the merchant sells** (grade, type, price, icons). Gear is bought once and worn.
-- 🧪 **Supplies** — one shop for potions, soulshots and scrolls at every level. Running low while farming → scroll to town, restock, back to farming. Soulshot grades switch by level by themselves. **Sell junk** at every shop visit.
+- 🧙 **Start wizard** — a new script with its zones and a filled shopping list (class gear, shots, scrolls, potions) in one go; you only record the routes.
+- 🛒 **Shopping list** — gear **and** supplies for every level, by town. Pick items straight from **what the merchant sells** (grade, type, price, icons). The character only goes shopping when something of its levels runs out or it needs gear for its new levels. **Sell junk** at every shop visit.
 - ✨ **Buff stops** — buy buffs from players or NPC buffers; a buffs step is skipped as a whole when all buffs are still on. *Add my target* adds the buff seller you target in game.
 - 🏕️ **Safe zone** — when the buffs run out at the farm spot, the character walks to its safe zone, kills what followed it, then goes to rebuff.
 - ⚔️ **Gear presets** — pick a class (dwarf, knight, dagger, archer, mage…) and its weapon and armor go into the gear shops; see the adena each preset costs.
@@ -43,31 +43,39 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 
 ## 🧭 How it works
 
-**1. Build the trip for each level range** — in the order the character should do it:
+**1. A zone for each level range** — a teleport and a farm spot; gatekeepers, shops, buffs and quests on the way are under *More settings*. The zone list shows each level range with its numbered steps:
 
-![A zone's trip: teleport, shops and farm spot](screenshots/v3-main.png)
+![A zone: teleport, more settings and farm spot with its stats](screenshots/v3-main.png)
 
 **2. Add quests right into the trip** — each character's progress is saved, a restart goes on where it stopped:
 
 ![Quest steps: talk to an NPC, hunt quest items](screenshots/v3-quest.png)
 
-**3. Record, draw or auto-route the paths on the real game map:**
+**3. Record, draw or auto-route the paths on the real game map** — and set the **safe zone** where the character waits out its aggro before a rebuff:
 
-![Route map with a walking route in Ant Nest](screenshots/v3-map.png)
+![Route map with a walking route in Ant Nest and the safe zone buttons](screenshots/v3-map.png)
 
-**4. Shopping lists from what the merchant really sells:**
+**4. One shopping list for every level** — gear and supplies by town; the character only goes shopping when it needs something:
+
+![Shopping list: towns, shops, items per level](screenshots/v3-shopping.png)
+
+Pick the items from what the merchant really sells:
 
 <img src="screenshots/v3-picker.png" width="640" alt="Pick items from what the merchant sells">
 
-**5. One Supplies shop for every level** — the character restocks by itself when it runs low:
+**5. Gear presets** — a class's weapon and armor for every grade in one click:
 
-![Supplies: potions, soulshots and scrolls per level](screenshots/v3-supplies.png)
+<img src="screenshots/v3-gear.png" width="640" alt="Gear presets per class">
+
+**Party** — leader, members and roles for your own party scripts:
+
+<img src="screenshots/v3-party.png" width="560" alt="Party window">
+
+**Settings** — sensible defaults, change them only if you want to:
+
+<img src="screenshots/v3-settings.png" width="560" alt="Gludio Gate settings">
 
 **6. Run** `Leveling_1_40.txt` in Adrenaline — *Running now* at the top shows every character that is leveling; click one to use the game buttons (Record, Nearby, Set NPC, Pick…).
-
-<img src="screenshots/v3-settings.png" width="640" alt="Gludio Gate settings">
-
-*Settings — sensible defaults, change them only if you want to.*
 
 <img src="screenshots/v3-database.png" width="640" alt="Lineage 2 game database: items, NPCs, skills with ids">
 
