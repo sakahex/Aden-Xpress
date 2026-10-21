@@ -17,6 +17,24 @@ all your leveling scripts with it — your zones and settings are never touched.
 - **Running now** — the top of the editor shows which characters are leveling right now, live (each script only writes the time every 20 s; nothing is read from the game).
 - **Connect on demand** — need the game buttons (Record, Nearby, Set NPC, Pick…)? Click the character in *Running now*. It connects within about 2 s and disconnects by itself 5 minutes after the last game button. `Editor.txt` is no longer needed for that.
 
+### 🛒 Shopping list (was *Supplies*)
+
+- **One shopping list for every level**: gear to wear **and** supplies (soulshots, potions, scrolls) — no more shop stops in every zone.
+- **Towns**: a tab per town (e.g. *Gludio*, *Giran*, *Scroll of Escape*), each with its own teleport and its shop NPCs — up to 9 towns. **+ Add town** / **Delete this town**.
+- Per item: **Buy up to**, **Go back at**, **Wear it** and **Only at levels** (a grade like *D grade* or a level range like *Lv 40-45*).
+- The character goes to town **only** when an item of its levels runs out (less than *Go back at*) or when it has no gear for its new levels yet — then it buys everything it needs and goes back to its farm spot.
+- **Move the zone shops here…** — moves the shop stops of all your zones into the list (by town); the walk to each farm spot stays the same. *Undo changes* puts everything back.
+
+### 🧙 Start wizard
+
+- Script **…** menu → **New script with the start wizard…** — pick the levels (e.g. 1 to 40), one zone every N levels, a class **gear preset**, and soulshots / Scrolls of Escape / potions.
+- It makes the zones and a **filled shopping list** (the High Five shops of Gludio and Giran with their buttons).
+- It never makes up routes: you then record each zone's farm spot and, in the shopping list, the walk from each town's teleport to its shop NPCs — then **Save**.
+
+### 🧭 Simpler zone page
+
+- A zone now shows just its **teleport** and **farm spot**. The gatekeeper, shops, buff stops and quests are behind **More settings** — one line says what is there (e.g. *gatekeeper Bella*, *quests: 1*); **Show** opens them.
+
 ### 🏕️ Safe zone (farm spot)
 
 - On the farm spot's **Map**: **🛡 Set safe zone**, then click the map where it should be (drag it to move it, right-click → *Clear safe zone*).
@@ -37,7 +55,7 @@ all your leveling scripts with it — your zones and settings are never touched.
 
 ### ⚔️ Gear presets
 
-- **Gear presets** — pick a class (dwarf, knight, dagger, archer, mage, …) and its **weapon and armor** go into your gear shops, from the merchants your script already has (no-grade / D / C).
+- Script **…** menu → **Gear preset (class weapon / armor)…** — pick a class (dwarf, knight, dagger, archer, fist fighter, polearm, heal, titan, kamael, …) and its **weapon and armor** go into your gear shops: no-grade at Gludio (Sydnia, Simplon), D and C at Giran (Graham, Radia). Edit, copy or add your own presets.
 - Shows **how much adena** a preset costs.
 - *Save as a new script* with a preset → one script per player / class.
 - Opening a script whose shops have no gear offers a preset.
