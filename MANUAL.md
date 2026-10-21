@@ -66,19 +66,23 @@ After activation the scripts appear next to the program:
 
 ## 3. Connect the editor to the game
 
-The editor talks to the game through a script running in Adrenaline:
+The editor needs the game only for the **game buttons** (Record, Nearby, Set from my target, Pick…).
+Building zones, shops and quests works without it.
 
-1. Log your character in.
-2. In Adrenaline, load and start **`Scripts\Leveling\Gludio Gate\Editor.txt`** (only connects) **or** `Leveling_1_40.txt` (connects **and** levels).
-3. The top bar of Gludio Gate turns green: **Lv 23 · Target: …** and the character appears in the **Character** row.
+1. Log your character in and start **`Leveling_1_40.txt`** in Adrenaline (or **`Editor.txt`** — only connects, no leveling).
+2. The character appears in **Running now** at the top of Gludio Gate.
+3. **Click its name** — within about 2 s the top bar turns green: **Lv 23 · Target: …**.
+   It stays connected until 5 minutes after the last game button, then disconnects by itself.
 
-Several characters can run at once — each gets its own button in the **Character** row; click one to see its stats.
+The leveling script never stays connected on its own — so leveling puts no extra work on Adrenaline.
+Several characters can run at once; click the one you want to use the game buttons with.
 
 ---
 
 ## 4. A tour of the window
 
-**Top bar** — the character's level, its target, what the script is doing right now, and your license.
+**Top bar** — the connected character's level and target, **Running now** (every character that is leveling — click one to connect it), the **Party** line, the version and your license.
+Buttons: **Recorder**, **Database**, **Zone stats**, **Nearby**, **Party**, **Settings**.
 
 **Menu row**
 
@@ -90,20 +94,16 @@ Several characters can run at once — each gets its own button in the **Charact
 | ⚙ **Settings** | bot timings, escape scroll, theme, language, folders ([section 12](#12-settings)) |
 | **License key… / About** | your key, version and what's new |
 
-**Stats line** — level %, exp/hour, time to next level, adena, deaths, stuck restarts.
-
 **Left side**
 
 - **Script** — the script you're editing: pick another one in the box. The **…** next to it: new script, save as a copy, open from another folder, rename, delete.
   Under it: which characters run this script right now, and **💾 Save** / **Undo changes**.
   Your changes reach the running characters only when you press **Save** — to try something on one character, use *… → Save as a new script* and run that copy on it.
 - **Character buttons** (2+ characters online) — show the script each one runs; click one to edit its script.
-- **Zones** — all your zones, sorted by level. Click one to edit it.
+- **Zones** — your zones grouped by level range (*Lv 5-15*). Each zone is a numbered step with a badge: **FARM** (the last step, where the bot fights), **BUFFS**, **SHOP**, **QUEST** or **WALK**. Click one to edit it.
 - **▲ Up / ▼ Down** — order of zones that start at the same level.
 - **+ Add zone / Delete zone**
 - **🧪 Supplies** — one shop for consumables, used at every level ([section 10](#10-supplies-potions-soulshots-scrolls)).
-- **✓ Check my setup** — finds anything missing.
-- **Zone stats** — exp/hour and deaths per zone, to compare spots.
 - **Zone packs** — export / import zones with all their routes.
 
 **Right side** — the selected zone: its name, levels and **the trip**.
@@ -167,8 +167,12 @@ Every stop and the farm spot has a **Route** — the walk from the previous plac
 1. Stand where the walk starts (for the first stop: **exactly where the teleport lands — wait a second after landing**).
 2. Click **● Record**, walk the way in game, click **■ Stop**.
 3. Click **Map** to check or fix it on the real game map:
-   drag a dot to move it · click to add a point · right-click a dot to delete · **Draw** to sketch · wheel = zoom · middle-drag = pan.
-   The red dot is your character.
+   drag a dot to move it · click to add a point · right-click a dot to delete · **Draw** to sketch · wheel = zoom · drag the map = pan.
+   The red dot is your character — **Center on character** jumps to it.
+
+**Safe zone** (farm spot map only): **🛡 Set safe zone** → click where it should be, and tick its checkbox.
+When a buff runs out while farming, the character walks there, kills what followed it, then does the rebuff trip.
+Pick a quiet spot near the farm area with no mobs walking through.
 
 **No route needed** — tick it when the NPC stands right where you arrive.
 
@@ -186,6 +190,10 @@ Every stop and the farm spot has a **Route** — the walk from the previous plac
    - **More ▾**: *when less than* (only buy when you have fewer), *Wear it* (equip after buying), *Go back at* (while farming, go back to buy when you have fewer than this).
 
 Gear is bought once and worn; a shop with nothing to buy is skipped.
+
+**Gear presets** (script **…** menu → *Gear presets*): pick a class (dwarf, knight, dagger, archer, mage…) and its
+weapon and armor go into your gear shops, with the adena it costs. *Save as a new script* with a preset makes one
+script per class.
 
 ---
 
@@ -228,7 +236,7 @@ Typical hunting quest: **Talk** (accept) → **Hunt** 20 claws → **Talk** (tur
 
 ## 11. Check and run
 
-1. Click **✓ Check my setup** — fix anything it lists (missing routes, buttons, fight zones…). Click a line to jump to it.
+1. Look over each zone once: every stop has a route (or **No route needed** ticked), every shop has items, and the farm spot has a fight zone. A red *not recorded* means a route is missing.
 2. In Adrenaline start **`Leveling_1_40.txt`** for the character.
 3. Watch the top bar: *Lv 23 – step: Giran shopping* → *farming at Ant Nest*.
 
@@ -268,7 +276,8 @@ Class changes are done **by hand**.
 - **Several scripts** — the **…** next to the script name → *New script* / *Save as a new script*: e.g. `Mage_1_40.txt` + `.ini`. Load the `.txt` you want in Adrenaline for each character. Copies update automatically with new versions.
 - **Zone sets** (older scripts only) — shown only when a script still has some. *… → Make this set a separate script* turns one into its own script.
 - **Zone packs** — share zones (with routes) as a file: *Zone packs → Export / Import*.
-- **Zone stats** — compare exp/hour and deaths of your farm spots.
+- **📊 Zone stats** (top row) — compare exp/hour and deaths of your farm spots.
+- **👥 Party** (top row) — parties with a leader and members (Fighter / Healer) for your own party scripts; *Check my setup* warns about party problems.
 - **Game database** — find any item / NPC / skill id.
 
 ---
@@ -279,7 +288,7 @@ Class changes are done **by hand**.
 - ✅ Prefer a **chat command** (`.giran`) for the trip start: same landing spot every time, free. A Scroll of Escape goes to the *nearest* town, which can change.
 - ✅ Record each route **from where the previous step really ends**, and wait a second after a teleport before pressing Record.
 - ✅ Check zone levels: *from* the first level *until reaching* the second.
-- ✅ Run **✓ Check my setup** after every big change.
+- ✅ After a big change, open each changed route's **Map** once to see that it really goes where you want.
 
 ---
 
@@ -287,7 +296,10 @@ Class changes are done **by hand**.
 
 | What you see | What to do |
 |---|---|
-| **Game not connected** | Start `Leveling_1_40.txt` or `Editor.txt` in Adrenaline (the exe must be in the same folder as the scripts). |
+| **Game not connected** | Click the character in **Running now** (it must run `Leveling_1_40.txt` or `Editor.txt`; the exe must be in the same folder as the scripts). |
+| **bag not loaded in Adrenaline - relog this character** | The character was in game before Adrenaline started: log it out and in once. |
+| L2 shows **Critical Error … system file may have been damaged (Bad name index …)** | A damaged game client file — run your server's updater / full file check. Not caused by Gludio Gate. |
+| L2 crashes in **nvd3dum.dll** | NVIDIA graphics driver — update / reinstall it; lower graphics settings when many clients are open. |
 | **trip failed (gatekeeper?), trying again** | The gatekeeper didn't teleport: check its **Buttons** (Pick… again), adena, and that the route ends next to it. |
 | **quest step failed** | The quest NPC wasn't found: the step's route must end near it; check the NPC name / id. |
 | **could not buy … (adena? wrong Dialog?)** | Not enough adena, or the shop's buttons are wrong (**More → Shop buttons → Pick…**). |
