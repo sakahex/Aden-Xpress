@@ -10,6 +10,7 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 
 💬 **[Join our Discord](https://discord.gg/PUMUGWgAkY)** for help, news and zone packs.
 📖 **[Step-by-step manual](MANUAL.md)** — from install to a character that levels by itself.
+🆕 **[What's new / all changes](CHANGELOG.md)** — every patch since 3.0.0.
 🗺️ **[Geodata](Geodata)** — download for **Auto route** on the route map.
 
 ![Gludio Gate - Lineage 2 auto leveling editor for the Adrenaline bot](screenshots/v3-main.png)
@@ -26,12 +27,15 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 - 📜 **Quests** — talk steps (accept, deliver, turn in) and hunt steps (collect quest items at the farm spot). *Add this quest* even makes the walking routes between the quest NPCs. Each character keeps its own progress and **goes on where it stopped** after a restart.
 - 🛒 **Shops** — pick items straight from **what the merchant sells** (grade, type, price, icons). Gear is bought once and worn.
 - 🧪 **Supplies** — one shop for potions, soulshots and scrolls at every level. Running low while farming → scroll to town, restock, back to farming. Soulshot grades switch by level by themselves. **Sell junk** at every shop visit.
-- ✨ **Buff stops** — buy buffs from players or NPC buffers; skipped when all buffs are still on. *Add my target* adds the buff seller you target in game.
-- 🎥 **Routes** — press **Record** and walk in game, draw them on the **real game map**, or let **Auto route** find the way.
-- 🛡️ **Safe** — stuck check, retries when a gatekeeper fails, finishes the fight before teleporting, never wastes a Scroll of Escape in town.
-- 📊 **Stats and alerts** — level, exp/hour and adena charts per character, zone stats, and an alert when a character dies or stops moving.
+- ✨ **Buff stops** — buy buffs from players or NPC buffers; a buffs step is skipped as a whole when all buffs are still on. *Add my target* adds the buff seller you target in game.
+- 🏕️ **Safe zone** — when the buffs run out at the farm spot, the character walks to its safe zone, kills what followed it, then goes to rebuff.
+- ⚔️ **Gear presets** — pick a class (dwarf, knight, dagger, archer, mage…) and its weapon and armor go into the gear shops; see the adena each preset costs.
+- 🎥 **Routes** — press **Record** and walk in game, draw them on the **real game map** (drag to move, *Center on character*), or let **Auto route** find the way.
+- ⚡ **Fast NPCs** — targeting, dialogs, buttons, buying and selling go on as soon as the game answers.
+- 🛡️ **Safe** — stuck check, retries when a gatekeeper fails, finishes the fight before teleporting, never wastes a Scroll of Escape in town, waits for a relog when Adrenaline doesn't see the bag.
+- 📊 **Zone stats** — compare exp/hour and deaths of your farm spots.
 - ✉️ **Mail** — takes your in-game mail for you.
-- 👥 **Several characters** at once, **several scripts** (e.g. one for mages), **zone packs** to share setups.
+- 👥 **Several characters** at once (*Running now* shows them live), **party** setup for your own party scripts, **several scripts** (e.g. one for mages), **zone packs** to share setups.
 - 🔎 **Game database** — find any item, NPC or skill with its id and icon.
 - 🌍 **5 languages**, dark and light theme. 🔄 **Updates itself** — click *Yes* and it's done.
 
@@ -59,7 +63,7 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 
 ![Supplies: potions, soulshots and scrolls per level](screenshots/v3-supplies.png)
 
-**6. Run** `Leveling_1_40.txt` in Adrenaline — the top bar shows what the character is doing, with live stats.
+**6. Run** `Leveling_1_40.txt` in Adrenaline — *Running now* at the top shows every character that is leveling; click one to use the game buttons (Record, Nearby, Set NPC, Pick…).
 
 <img src="screenshots/v3-settings.png" width="640" alt="Gludio Gate settings">
 
@@ -93,6 +97,7 @@ One key works on one PC; a new PC or a Windows reinstall needs a new key.
 1. Log in your character and set up fighting in Adrenaline as usual.
 2. In Adrenaline run **`Scripts\Leveling\Gludio Gate\Leveling_1_40.txt`**.
 3. Open Gludio Gate to build and change your zones, then press **💾 Save** — the characters running that script use the changes right away.
+4. Need the game buttons (Record, Nearby, Set NPC…)? Click the character in **Running now** — it connects for 5 minutes after the last game button. The leveling script itself never stays connected, so it puts no extra work on Adrenaline.
 
 New to it? Follow the **[step-by-step manual](MANUAL.md)**.
 
@@ -115,8 +120,9 @@ Only the editor uses these files — Adrenaline doesn't need them. You do this o
 
 ## 🔄 Updates
 
-The editor checks for a new version when it starts — click **Yes** and it updates itself and the scripts.
-Your zones and settings are never overwritten.
+The editor checks for a new version when it starts — click **Yes** and it updates itself and the scripts
+(also your own copies such as `Mage_1_40.txt`). Your zones and settings are never overwritten.
+After an update, restart your scripts in Adrenaline once. All changes: **[CHANGELOG.md](CHANGELOG.md)**.
 
 ---
 
