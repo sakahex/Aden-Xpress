@@ -19,7 +19,7 @@ New here? Read the steps **in order** — each one builds on the one before.
 7. [Record routes](#7-record-routes)
 8. [Shops](#8-shops)
 9. [Quests](#9-quests)
-10. [Supplies (potions, soulshots, scrolls)](#10-supplies-potions-soulshots-scrolls)
+10. [Shopping list (gear and supplies)](#10-shopping-list-gear-and-supplies)
 11. [Check and run](#11-check-and-run)
 12. [Settings](#12-settings)
 13. [More tools](#13-more-tools)
@@ -103,7 +103,7 @@ Buttons: **Recorder**, **Database**, **Zone stats**, **Nearby**, **Party**, **Se
 - **Zones** — your zones grouped by level range (*Lv 5-15*). Each zone is a numbered step with a badge: **FARM** (the last step, where the bot fights), **BUFFS**, **SHOP**, **QUEST** or **WALK**. Click one to edit it.
 - **▲ Up / ▼ Down** — order of zones that start at the same level.
 - **+ Add zone / Delete zone**
-- **🧪 Supplies** — one shop for consumables, used at every level ([section 10](#10-supplies-potions-soulshots-scrolls)).
+- **🛒 Shopping list** — gear and supplies for every level, by town ([section 10](#10-shopping-list-gear-and-supplies)).
 - **Zone packs** — export / import zones with all their routes.
 
 **Right side** — the selected zone: its name, levels and **the trip**.
@@ -113,6 +113,11 @@ Press **💾 Save** (or Ctrl+S) under the script name when you're done - only th
 ---
 
 ## 5. Make your first zone
+
+> 🧙 **Quick start:** script **…** menu → **New script with the start wizard…**. Pick the levels (e.g. 1 to 40),
+> one zone every N levels, a class gear preset, and soulshots / Scrolls of Escape / potions. It makes the zones and
+> a filled shopping list (the shops of Gludio and Giran). Then you only record each zone's farm spot and, in the
+> shopping list, the walk from each town's teleport to its shop NPCs — and press **Save**.
 
 1. Click **+ Add zone → New zone (the next levels)**.
 2. Type a **Name** (e.g. *Ant Nest*) and the **Levels**, e.g. **20** to **30**.
@@ -152,6 +157,7 @@ Use **+ Add ▾** to add:
 | **Quest** | a quest done at this point of the trip ([section 9](#9-quests)) |
 | **Farm spot** | the route to the spot and the **fight zone** (a `.zmap` from Adrenaline's *Settings* folder). Always last. |
 
+- Most zones only need the **teleport** and the **farm spot**. Gatekeepers, shops, buff stops and quests are under **More settings** — its line says what is there (e.g. *gatekeeper Bella · quests: 1*); click **Show** to open them.
 - **▲ ▼** move stops and quests; **✕** removes anything (the teleport too).
 - The type label on a card (e.g. **GATEKEEPER ▾**) changes a stop's type.
 - **Buttons → Pick…**: talk to the NPC in game, then double-click the buttons in the order you click them.
@@ -191,8 +197,9 @@ Pick a quiet spot near the farm area with no mobs walking through.
 
 Gear is bought once and worn; a shop with nothing to buy is skipped.
 
-**Gear presets** (script **…** menu → *Gear presets*): pick a class (dwarf, knight, dagger, archer, mage…) and its
-weapon and armor go into your gear shops, with the adena it costs. *Save as a new script* with a preset makes one
+**Gear presets** (script **…** menu → *Gear preset (class weapon / armor)…*): pick a class (dwarf, knight, dagger,
+archer, fist fighter, polearm, heal, titan, kamael…) and its weapon and armor go into your gear shops — no-grade at
+Gludio, D and C at Giran. Edit, copy or add your own presets. *Save as a new script* with a preset makes one
 script per class.
 
 ---
@@ -220,17 +227,24 @@ Typical hunting quest: **Talk** (accept) → **Hunt** 20 claws → **Talk** (tur
 
 ---
 
-## 10. Supplies (potions, soulshots, scrolls)
+## 10. Shopping list (gear and supplies)
 
-**🧪 Supplies** (left side) is **one** shop for consumables, used at **every** level:
+**🛒 Shopping list** (left side) is **everything the characters buy, for every level** — gear to wear and supplies:
 
-1. Keep the **Town teleport** (e.g. `.giran`).
-2. **+ Add the supplies shop** → NPC (e.g. Helvetia), route, **Pick from what … sells**.
+1. **Towns** — one tab per town (e.g. *Gludio*, *Giran*), each with its own **Town teleport** (`.giran`) and shop NPCs. **+ Add town** for another one (up to 9).
+2. In a town: **+ Add → Shop** → NPC (e.g. Helvetia), its route from the teleport, **Pick from what … sells**.
 3. Each item:
    - **Buy up to** — e.g. 3000 soulshots.
-   - **Go back when less than** — e.g. 300: while farming, below this the character scrolls to town, restocks everything and returns.
-   - **Only at levels** — e.g. D-grade soulshots *20 – 40*, C-grade *40 –* (empty = every level).
+   - **Go back at** — e.g. 300: while farming, below this the character goes to town, buys everything it needs and returns.
+   - **Wear it** — gear: equip it after buying.
+   - **Only at levels** — a grade (*D grade*) or levels (*Lv 40-45*); empty = every level.
 4. **Sell junk** (same page): items sold at every shop visit, before buying.
+
+The character goes to town **only** when an item of its levels runs out or it has no gear for its new levels yet —
+otherwise it never walks to a shop.
+
+> Old scripts with shop stops in their zones: **Move the zone shops here…** moves them into the list (by town) and
+> keeps the walk to every farm spot the same. Nothing is saved until **Save** — *Undo changes* puts it back.
 
 ---
 
