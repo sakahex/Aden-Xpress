@@ -198,8 +198,9 @@ Pick a quiet spot near the farm area with no mobs walking through.
 Gear is bought once and worn; a shop with nothing to buy is skipped.
 
 **Gear presets** (script **…** menu → *Gear preset (class weapon / armor)…*): pick a class (dwarf, knight, dagger,
-archer, fist fighter, polearm, heal, titan, kamael…) and its weapon and armor go into your gear shops — no-grade at
-Gludio, D and C at Giran. Edit, copy or add your own presets. *Save as a new script* with a preset makes one
+archer, fist fighter, polearm, mage, heal, titan, kamael…) and its weapon and armor go into your gear shops — no-grade
+at Gludio (Sydnia, Simplon), D and C at Giran: fighters from Graham and Radia, mages (staffs, robes) from **Stanford**
+and **Peta**. Edit, copy or add your own presets. A new shop (e.g. Stanford) needs its shop buttons set once with **Pick…**. *Save as a new script* with a preset makes one
 script per class.
 
 ---
