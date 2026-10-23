@@ -6,6 +6,18 @@ all your leveling scripts with it — your zones and settings are never touched.
 
 ---
 
+## 3.0.12 — October 2026
+
+### 🧙 Mage gear in the gear presets
+
+- The weapon / armor pickers now also list what **Stanford** (wizard weapons) and **Peta** (wizard armor) sell in Giran — next to Graham and Radia. So D and C **staffs, magic swords, books and robes** can be picked.
+- The default **Mage - staff + robe** preset now has **D** gear (Staff of Life, Knowledge robe set) and **C** gear (Sage's Staff, Karmian robe set).
+  Already have your presets? **Add the defaults back** adds it, or pick the staff and robe in your own mage preset.
+- **Start wizard**: with a mage preset it also adds Stanford and Peta to the Giran shopping list.
+- Stanford and Peta are new shops: talk to each once in game and set their shop buttons with **Pick…** (the *Common Items* list).
+
+---
+
 ## 3.0.11 — October 2026
 
 *3.0.1 – 3.0.10 were test builds and never released, so everything below is new in 3.0.11.*
