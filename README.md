@@ -29,7 +29,7 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 - 🛒 **Shopping list** — gear **and** supplies for every level, by town. Pick items straight from **what the merchant sells** (grade, type, price, icons). The character only goes shopping when something of its levels runs out or it needs gear for its new levels. **Sell junk** at every shop visit.
 - ✨ **Buff stops** — buy buffs from players or NPC buffers; a buffs step is skipped as a whole when all buffs are still on. *Add my target* adds the buff seller you target in game.
 - 🏕️ **Safe zone** — when the buffs run out at the farm spot, the character walks to its safe zone, kills what followed it, then goes to rebuff.
-- ⚔️ **Gear presets** — pick a class (dwarf, knight, dagger, archer, mage…) and its weapon and armor go into the gear shops; see the adena each preset costs.
+- ⚔️ **Gear presets** — pick a class (dwarf, knight, dagger, archer, mage…) and its weapon and armor for no-grade, D and C go into the shopping list — fighters from Graham / Radia, mages (staffs and robes) from Stanford / Peta in Giran.
 - 🎥 **Routes** — press **Record** and walk in game, draw them on the **real game map** (drag to move, *Center on character*), or let **Auto route** find the way.
 - ⚡ **Fast NPCs** — targeting, dialogs, buttons, buying and selling go on as soon as the game answers.
 - 🛡️ **Safe** — stuck check, retries when a gatekeeper fails, finishes the fight before teleporting, never wastes a Scroll of Escape in town, waits for a relog when Adrenaline doesn't see the bag.
@@ -63,7 +63,7 @@ Pick the items from what the merchant really sells:
 
 <img src="screenshots/v3-picker.png" width="640" alt="Pick items from what the merchant sells">
 
-**5. Gear presets** — a class's weapon and armor for every grade in one click:
+**5. Gear presets** — a class's weapon and armor for every grade in one click (fighters and mages):
 
 <img src="screenshots/v3-gear.png" width="640" alt="Gear presets per class">
 
