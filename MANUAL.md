@@ -81,8 +81,8 @@ Several characters can run at once; click the one you want to use the game butto
 
 ## 4. A tour of the window
 
-**Top bar** — the connected character's level and target, **Running now** (every character that is leveling — click one to connect it), the **Party** line, the version and your license.
-Buttons: **Recorder**, **Database**, **Zone stats**, **Nearby**, **Party**, **Settings**.
+**Top bar** — the connected character's level and target, **Running now** (every character that is leveling — click one to connect it), the version and your license.
+Buttons: **Recorder**, **Database**, **Nearby**, **Settings**.
 
 **Menu row**
 
@@ -175,6 +175,11 @@ Every stop and the farm spot has a **Route** — the walk from the previous plac
 3. Click **Map** to check or fix it on the real game map:
    drag a dot to move it · click to add a point · right-click a dot to delete · **Draw** to sketch · wheel = zoom · drag the map = pan.
    The red dot is your character — **Center on character** jumps to it.
+
+**Fight zone** (farm spot): **Edit** opens the zone's `.zmap` on the game map, **New…** draws a new one. Click to add
+corners (a click next to a side adds a corner there), drag to move, right-click to delete. **+ Hole** = an area inside
+the fight zone the bot stays out of. **Save fight zone** writes it into Adrenaline's Settings folder (the old file is
+kept as `.zmap.bak`) and the farm spot uses it - press **Save** in Gludio Gate.
 
 **Safe zone** (farm spot map only): **🛡 Set safe zone** → click where it should be, and tick its checkbox.
 When a buff runs out while farming, the character walks there, kills what followed it, then does the rebuff trip.
@@ -279,6 +284,7 @@ Class changes are done **by hand**.
 | Between two supply runs wait at least | 10 min |
 | Before a teleport, wait for the fight to end up to | 60 s |
 | Escape scroll | Scroll of Escape (or Adventurer's, or never) |
+| Use the scroll at once, even in a fight (no waiting for the fight to end) | off |
 | Don't use the scroll while in a town / town size | on, 3000 |
 | Open the editor when the script starts in Adrenaline | off |
 
@@ -291,8 +297,7 @@ Class changes are done **by hand**.
 - **Several scripts** — the **…** next to the script name → *New script* / *Save as a new script*: e.g. `Mage_1_40.txt` + `.ini`. Load the `.txt` you want in Adrenaline for each character. Copies update automatically with new versions.
 - **Zone sets** (older scripts only) — shown only when a script still has some. *… → Make this set a separate script* turns one into its own script.
 - **Zone packs** — share zones (with routes) as a file: *Zone packs → Export / Import*.
-- **📊 Zone stats** (top row) — compare exp/hour and deaths of your farm spots.
-- **👥 Party** (top row) — parties with a leader and members (Fighter / Healer) for your own party scripts; *Check my setup* warns about party problems.
+- **Adrenaline settings** (under the script box) — the Adrenaline settings file (from its Settings folder, e.g. *Dagger*) this script loads when it starts, or *each character's own* (the file with its name). Press **Save**; the script loads them in Adrenaline by itself.
 - **Game database** — find any item / NPC / skill id.
 
 ---
