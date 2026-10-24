@@ -33,9 +33,10 @@ walks to the right farm spot and moves on when it levels up. Everything is done 
 - 🎥 **Routes** — press **Record** and walk in game, draw them on the **real game map** (drag to move, *Center on character*), or let **Auto route** find the way.
 - ⚡ **Fast NPCs** — targeting, dialogs, buttons, buying and selling go on as soon as the game answers.
 - 🛡️ **Safe** — stuck check, retries when a gatekeeper fails, finishes the fight before teleporting, never wastes a Scroll of Escape in town, waits for a relog when Adrenaline doesn't see the bag.
-- 📊 **Zone stats** — compare exp/hour and deaths of your farm spots.
+- 🗺️ **Fight zones** — draw Adrenaline's fight zones (.zmap) on the game map, with holes the bot stays out of; saved straight into Adrenaline's Settings folder.
+- ⚙️ **Adrenaline settings per script** — pick the settings file (e.g. Dagger) a script loads when it starts: no loading them one by one.
 - ✉️ **Mail** — takes your in-game mail for you.
-- 👥 **Several characters** at once (*Running now* shows them live), **party** setup for your own party scripts, **several scripts** (e.g. one for mages), **zone packs** to share setups.
+- 👥 **Several characters** at once (*Running now* shows them live), **several scripts** (e.g. one for mages), **zone packs** to share setups.
 - 🔎 **Game database** — find any item, NPC or skill with its id and icon.
 - 🌍 **5 languages**, dark and light theme. 🔄 **Updates itself** — click *Yes* and it's done.
 
@@ -66,10 +67,6 @@ Pick the items from what the merchant really sells:
 **5. Gear presets** — a class's weapon and armor for every grade in one click (fighters and mages):
 
 <img src="screenshots/v3-gear.png" width="640" alt="Gear presets per class">
-
-**Party** — leader, members and roles for your own party scripts:
-
-<img src="screenshots/v3-party.png" width="560" alt="Party window">
 
 **Settings** — sensible defaults, change them only if you want to:
 
