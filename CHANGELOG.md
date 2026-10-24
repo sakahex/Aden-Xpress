@@ -6,6 +6,12 @@ all your leveling scripts with it — your zones and settings are never touched.
 
 ---
 
+## 3.0.17 — October 2026
+
+- Small fixes.
+
+---
+
 ## 3.0.16 — October 2026
 
 *3.0.13 – 3.0.15 were test builds and never released, so everything below is new in 3.0.16.*
