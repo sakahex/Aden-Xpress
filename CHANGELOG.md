@@ -6,6 +6,34 @@ all your leveling scripts with it — your zones and settings are never touched.
 
 ---
 
+## 3.0.16 — October 2026
+
+*3.0.13 – 3.0.15 were test builds and never released, so everything below is new in 3.0.16.*
+
+### 🗺️ Fight zone editor
+- **Edit** / **New…** next to the farm spot's **Fight zone**: draw the fight area on the real game map — click to add corners (a click next to a side adds a corner there), drag to move, right-click to delete.
+- **+ Hole**: an area inside the fight zone the bot stays out of.
+- **Save fight zone** writes the `.zmap` straight into Adrenaline's `Settings` folder, exactly like Adrenaline's own files. Editing an existing file keeps the old one as `.zmap.bak`.
+
+### ⚙️ Adrenaline settings per script
+- Under the script box: **Adrenaline settings** — pick the settings file (from `Adrenaline\Settings`, e.g. *Dagger*) the script loads when it starts, or *each character's own* (the file with its name), or *don't load*.
+- Press **Save**: when the script starts in Adrenaline it loads those settings by itself — no more loading them one by one.
+
+### 📜 Scroll out of fights at once
+- **Settings → Bot → Use the scroll at once, even in a fight**: when the character has to go to town (supplies low, teleport item, chat teleport, quest done) it reads the Scroll of Escape right away instead of finishing the fight first.
+
+### 🛡️ Fixes
+- A teleport item (e.g. Scroll of Escape) waited up to **twice** the "wait for the fight to end" time while mobs were on the character — characters reached town late.
+- **Settings → Bot**: a number below its minimum (e.g. a retry wait under 5 s) was silently not saved. The box now turns red and says the minimum.
+
+### 🧹 Removed
+- The **Party** window and **Zone stats**.
+
+### 🔑 Licenses
+- Time-limited license keys issued before **25 October 2026** are no longer valid — ask the seller for a new key. Lifetime keys are not affected.
+
+---
+
 ## 3.0.12 — October 2026
 
 ### 🧙 Mage gear in the gear presets
