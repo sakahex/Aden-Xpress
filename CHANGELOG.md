@@ -29,9 +29,6 @@ all your leveling scripts with it — your zones and settings are never touched.
 ### 🧹 Removed
 - The **Party** window and **Zone stats**.
 
-### 🔑 Licenses
-- Time-limited license keys issued before **25 October 2026** are no longer valid — ask the seller for a new key. Lifetime keys are not affected.
-
 ---
 
 ## 3.0.12 — October 2026
