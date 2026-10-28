@@ -6,6 +6,55 @@ all your leveling scripts with it — your zones and settings are never touched.
 
 ---
 
+## 3.0.42 — October 2026
+
+*3.0.26 – 3.0.41 were test builds and never released, so everything below is new in 3.0.42.*
+
+### New
+- Quests with a *quest id* find each character's step from the game's quest list. The bot learns it by itself while characters do the quest; then a character whose saved step is wrong is moved to the right one, and one that dropped the quest starts over.
+- A quest's *Progress* button opens a window that scrolls through every character: change a character's step (or set it to finished), remove a character so it starts the quest over, or add one, then *Save*.
+- *Repeat when finished* sits next to the *Progress* button: on = the character takes the quest again every time, off = once per character.
+- Two more themes in *Settings > App*: *Adena gold* (warm black and gold) and *Gludio stone* (warm grey and green). All themes now have a flat, solid look and calmer headings.
+- *Copy zone* (next to the zone list's arrows) and *+ Add zone > Paste zone*: a whole zone goes into this or another script. The farm spot and the zone's gatekeeper also have their own *Copy* button, pasted with *+ Add* in another zone.
+- *Copy card* on every stop card, and *Paste card* in *+ Add*: a shop (NPC, buttons, route, shortcut, items) can be copied to another zone, the shopping list or another script. Pasted in a town that already has that NPC, its items are added to that card (one walk to the NPC, not two).
+- *Shortcut from town* on shop cards: when only that shop has something to buy (e.g. just mana potions), the character walks its shortcut and skips the other shops. With 2 or more shops to visit, the full route is walked. Record it in game or draw it on the map (Auto route can find the way).
+- *Auto zone* on the map's fight zone (needs geodata, *Settings > App*): pick a size, click a spot, and the fight area follows the ground the character can walk to, with holes around walls, rocks and cliffs. *Auto holes* does the same inside an area you drew yourself. Undo brings the old zone back.
+- *Save as...* on the fight zone map: saves the zone as a new .zmap file, and the farm spot then uses the new one.
+- Saving a fight zone warns when Adrenaline would refuse it (two corners closer than 50, or lines that cross) and shows the area or hole with the problem.
+- *Delete this town* also works for the first town of the shopping list: the next town takes its place.
+- A shopping town that teleports with a *Scroll of Escape* shows a warning: the scroll goes to the nearest town, not to that town's shops. Use the chat command (e.g. *.giran*).
+
+### Fixed
+- When a gatekeeper teleport took long to load (many game windows open), the character landed in the farm zone but the bot said *no teleport* and stopped. A late landing now counts as teleported.
+- A new character with the name of an old one could skip a quest the old one had finished (*its quests are finished*). Quest progress now remembers which character it belongs to, so the new one does the quest.
+- A quest talk step only counts when the NPC's window really opened (3 tries) - before, a character that never got the NPC targeted could save the quest as finished.
+- A character started at its farm spot near a zone's landing point thought it was already there, didn't teleport, couldn't find the first NPC and waited for ever. After a failed trip the next try always teleports.
+- A character already standing where a zone's teleport lands no longer needs the teleport - it walks on from there.
+- A zone that is only quests, all finished by this character, no longer uses its teleport (no more wasted *Scroll of Escape*).
+- A zone's *Shortcut route* is always shown on its farm card when it has points, with a delete button.
+
+---
+
+## 3.0.25 — October 2026
+
+### New
+- *+ Add > Gift of Vitality (Jack Sage)*: a stop on the trip where the character opens Jack Sage's window and clicks *Receive the Gift of Vitality* (vitality up to level 4 for 2 hours), then goes on. It only goes when the character has no *Blessing of Vitality* (checked by name and by its id 23179), and at most once in 12 hours - so after a death it doesn't walk back to Jack Sage again and again (both can be changed on the card). No NPC id needed - it talks to the Jack Sage in whichever town it is. Record the route to him like for any other stop.
+- *+ Add > Talk to an NPC*: the same for any NPC - type its name and the buttons to click.
+- *Discord*, *GitHub* and *Support the project* (Revolut) icons in the top bar - click one to open it. *Support the project* is in About too.
+
+### Changed
+- Under the zone list, *+ Add zone*, up, down and delete are in one row - *Delete zone* is no longer right under *Add zone*.
+- The *Record* buttons are plain until they record; while recording they turn red (*■ Stop*).
+
+### Fixed
+- Spanish, Portuguese, Russian and Ukrainian: about 125 texts that were still in English (gear presets, the fight zone map, *Running now*, the top line, What's new...) are translated, and the *How* box shows its whole text.
+- After switching dark / light in Settings, the main buttons took the Windows accent color - they stay Gludio green now.
+- Recorder: the status text has its own line under the buttons (it ran over the last button).
+- Deleting the chat command of a teleport (the trip's first card, a gatekeeper stop set to *Chat command*, or a quest step) no longer turns the card into an empty gatekeeper or removes the teleport card - the card stays while you type the new command.
+- The About window fits the screen: a long *What's new* list scrolls, so the buttons at the bottom are always visible.
+
+---
+
 ## 3.0.17 — October 2026
 
 - Small fixes.
